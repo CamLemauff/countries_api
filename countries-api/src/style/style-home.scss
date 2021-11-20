@@ -1,0 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+
+$app-black: #111517;
+$app-white: #FAFAFA;
+$white: #FFFFFF;
+$border-color: #979797;
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Nunito Sans';
+}
+
+#app {
+    height: 100%;
+
+    .container-home {
+        height: 100%;
+        
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            .navbar-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 20px 0;
+
+                .navbar-title {
+                    // font-family: 'Nunito Sans';
+                    font-weight: 800;
+                    color: $app-black;
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+
+                .navbar-dark {
+                    display: flex;
+                    cursor: pointer;
+
+                    .navbar-dark-icon {
+                        color: $app-black;
+                    }
+
+                    .navbar-dark-text {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $app-black;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .navbar-dark-mode {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #2B3844;
+
+            .navbar-container {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 20px 0;
+
+                .navbar-title {
+                    // font-family: 'Nunito Sans';
+                    font-weight: 800;
+                    color: $white;
+                    font-size: 24px;
+                    line-height: 33px;
+                }
+
+                .navbar-dark {
+                    display: flex;
+                    cursor: pointer;
+
+                    .navbar-dark-icon {
+                        color: $white;
+                    }
+
+                    .navbar-dark-text {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: $white;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+
+        .home {
+            width: 100%;
+            background-color: $app-white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .search {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                .input-search {
+                    background-color: $white;
+                    width: 30%;
+                    height: 40px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    color: #848484;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    .fa-search {
+                        margin-right: 10px;
+                    }
+
+                    .input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                    }
+                }
+
+                .select-search {
+                    background-color: $white;
+                    width: 10%;
+                    height: 40px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: #848484;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    .input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+            .countries-list {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .country-card {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $white;
+                    border-radius: 5px;
+                    margin: 30px;
+                    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                    .country-flag {
+                        width: 250px;
+                        height: 160px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+
+                        .flag {
+                            width: 100%;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            height: 100%;
+                        }
+                    }
+
+                    .router {
+                        text-decoration: none;
+
+                        .country-info {
+                            padding-left: 20px;
+                            margin-bottom: 30px;
+
+                            .country-name {
+                                font-size: 18px;
+                                font-weight: 800;
+                                line-height: 26px;
+                                color: $app-black;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                            }
+
+                            .country-category {
+                                display: flex;
+
+                                .category-title {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: $app-black;
+                                    margin-right: 10px;
+                                    margin-bottom: 5px;
+                                }
+
+                                .category-subtitle {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: $app-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .home-dark {
+            width: 100%;
+            background-color:#202C36;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .search {
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                .input-search {
+                    background-color: #2B3844;
+                    width: 30%;
+                    height: 40px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    .fa-search {
+                        margin-right: 10px;
+                    }
+
+                    .input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                        background-color: #2B3844;
+                        color: $white;
+                    }
+
+                    .input::placeholder {
+                        color: $white;
+                    }
+                }
+
+                .select-search {
+                    background-color: #2B3844;
+                    width: 10%;
+                    height: 40px;
+                    border-radius: 5px;
+                    display: flex;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    color: $white;
+                    font-weight: 300;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    .input {
+                        border: none;
+                        outline: none;
+                        width: 100%;
+                        height: 40px;
+                        border-radius: 5px;
+                        background-color: #2B3844;
+                        color: $white;
+                    }
+
+                    .input::after {
+                        color: $white;
+                    }
+                }
+            }
+
+            .countries-list {
+                width: 90%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .country-card {
+                    width: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    background-color: #2B3844;
+                    border-radius: 5px;
+                    margin: 30px;
+
+                    .country-flag {
+                        width: 250px;
+                        height: 160px;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+
+                        .flag {
+                            width: 100%;
+                            border-top-left-radius: 5px;
+                            border-top-right-radius: 5px;
+                            height: 100%;
+                        }
+                    }
+
+                    .router {
+                        text-decoration: none;
+
+                        .country-info {
+                            padding-left: 20px;
+                            margin-bottom: 30px;
+
+                            .country-name {
+                                font-size: 18px;
+                                font-weight: 800;
+                                line-height: 26px;
+                                color: $white;
+                                margin-top: 15px;
+                                margin-bottom: 15px;
+                            }
+
+                            .country-category {
+                                display: flex;
+
+                                .category-title {
+                                    font-size: 14px;
+                                    font-weight: 600;
+                                    color: $white;
+                                    margin-right: 10px;
+                                    margin-bottom: 5px;
+                                }
+
+                                .category-subtitle {
+                                    font-size: 14px;
+                                    font-weight: 300;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .details {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        
+        .details-container {
+            width: 90%;
+
+            .country {
+                display: flex;
+                flex-direction: column;
+
+                .info {
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+
+                    .info-flag {
+                        width: 50%;
+                        margin-right: 50px;
+
+                        .flag {
+                            width: 100%;
+                            height: 70%;
+                        }
+                    }
+
+                    .info-list {
+                        width: 50%;
+
+                        .list-title {
+                            font-size: 32px;
+                            font-weight: 800;
+                            line-height: 44px;
+                            color: $app-black;
+                            margin-bottom: 30px;
+                        }
+
+                        .list-others {
+                            display: flex;
+                            flex-direction: row;
+                            flex-wrap: wrap;
+
+                            .category {
+                                display: flex;
+                                flex-direction: row;
+                                margin-right: 20px;
+
+                                .category-title {
+                                    font-size: 16px;
+                                    font-weight: 600;
+                                    line-height: 32px;
+                                    color: $app-black;
+                                    margin-right: 10px;
+                                }
+
+                                .category-subtitle {
+                                    font-size: 16px;
+                                    font-weight: 300;
+                                    line-height: 32px;
+                                    color: $app-black;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
